@@ -12,4 +12,7 @@ renderer.render(scene, camera);
 //ジオメトリの作成
 const ballGeometry = new THREE.SphereGeometry(100, 64, 32);
 //マテリアルの作成
-let ballMaterial = new THREE.MeshPhysicalMaterial();
+const ballMaterial = new THREE.MeshPhysicalMaterial();
+//メッシュ化
+const ballMesh = new THREE.Mesh(ballGeometry, ballMaterial);
+scene.add(ballMesh)
