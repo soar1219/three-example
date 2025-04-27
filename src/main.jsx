@@ -1,6 +1,5 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/Addons.js";
-import earthTexture from './assets/img/texture/earth.jpg';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(50,window.innerWidth / window.innerHeight,0.1,1000);
@@ -9,7 +8,7 @@ const renderer = new THREE.WebGLRenderer({alpha : true});
 
 document.body.appendChild(renderer.domElement)
 
-const texture = new THREE.TextureLoader().load(earthTexture)
+const texture = new THREE.TextureLoader().load("/src/assets/img/texture/earth.jpg")
 //ジオメトリの作成
 const ballGeometry = new THREE.SphereGeometry(100, 64, 32);
 //マテリアルの作成
