@@ -8,3 +8,6 @@ document.body.appendChild(renderer.domElement)
 
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.render(scene, camera);
+
+//ジオメトリの作成
+const ballGeometry = new THREE.SphereGeometry(100, 64, 32);
